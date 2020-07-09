@@ -1,0 +1,119 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100%; height: 100px;
+    /*background-color:  red;*/
+    display: flex; color: black;
+    
+}
+
+.logo{
+    width: 50%;
+    height: 100px;
+       background: #52adf7;
+}
+
+.logo h1{
+    line-height: 100px;
+    padding-left: 50px;
+       background: #52adf7;
+  
+}
+
+.menu{
+    width: 50%; height: 100px;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    background: #52adf7;
+  
+    
+}
+
+.menu ul li a{
+    display: block;
+    color: black;
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.menu ul li:hover
+{
+        background-color:white;
+}
+
+body {
+    background-image: url("doc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+section{ display: flex;  }
+
+.leftside { 
+   
+  width: 50%;
+  padding: 55px;
+  
+}
+
+.leftside img{  width: 600px;  height: 500px; 
+    
+}
+
+.rightside{ width: 70%; height: auto; color: black; margin-top: 20px; padding: 50px;
+    /*background : rgb(100, 149, 237,0.8); text-align: left;*/
+   
+}
+
+#!--.rightside h1{ text-align: left;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase; 
+background: yellowgreen;}  
+
+.rightside p {  
+    font-size: 1.1rem; padding: 30px 0;
+background: yellowgreen; }
+
+#!.rightside button{   font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+    background: yellowgreen;
+}
+
+
+
+.rightside button:hover{
+      background: burlywood;   
+}
+
+
+.rightside button {
+    background-color: coral;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

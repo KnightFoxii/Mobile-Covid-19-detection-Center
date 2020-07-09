@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     <link rel="stylesheet" type="text/css" href="s.css">
+
+     <script type  = "text/javascript">
+
+	
+      function validate()
+      {	
+        if(document.mandali.firstname.value == "")
+        {
+          alert("please provide your name ");
+          document.mandali.firstname.focus();
+          return false ;
+        }
+        if(document.mandali.lastname.value == "")
+        {
+          alert("please provide your last name ");
+          document.mandali.lastname.focus();
+          return false ;
+        }
+
+        if(document.mandali.username.value == "")
+        {
+          alert("please provide your username bro");
+          document.mandali.lastname.focus();
+          return false ;
+        }
+        if(document.mandali.address.value == "")
+        {
+
+          alert("please provide address");
+          document.mandali.lastname.focus();
+          return false ;
+        }
+
+        
+        var x=document.mandali.Email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+        {  
+          alert("Please enter a valid e-mail address");  
+          return false;  
+        }
+        var z = document.mandali.Phone.value;
+        if (z.length<10 || z.length==0 || z.length =="" || z.length >10)
+          {
+            alert("please provide with a valid number creep samaj ke rakha hai kya ?")
+            return false;
+          }
+      }
+    
+    
+    </script>
+
+	</head>
+	
+	<body>
+		<nav>
+			<div class ="logo">
+				<h1>Covid-19</h1>
+            </div>
+            
+            <div class="menu"> 
+                <ul>
+                 <li><a href="as1.html">Home</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#aboutUs">AboutUs</a></li>
+                 <li><a href="#contactUs">ContactUs</a></li>
+                </ul>
+               </div>
+        </nav>
+
+        <section>
+          <div class = "leftside">
+             
+              <br>
+              <H1><font size = 10>Welcome to Mobile Covid Detection Center </font></H1>
+                  <br>
+                   <p><font SIZE = 7>Symptoms </font></p>
+				  <br><br>
+				   <ul style="font-weight: bold;">
+						<li>Fever</li>
+						<li>Cough</li>
+						<li>Tiredness</li>
+						<li>Shortness of breath or difficulty breathing</li>
+						<li>Muscle aches</li>
+						<li>Chills</li>
+						<li>Sore throat</li>
+						<li>Loss of taste or smell</li>
+						<li>Headache</li>
+					</ul>
+          </div>
+
+          <div class ="rightside">
+              <center>
+              <form onsubmit = "return validate();" action="verifyP.php" name = "mandali" method="POST" >
+                   <button class="btn btn-primary" type = "submit" >Login via Arogya setu app</button>
+                    <button class="btn btn-primary" type = "submit" >Login via Adhar Card Details</button>
+                    <br><br>
+                    <h1><font SIZE = 6>Enter Your Details :</font></h1>
+                      <br><br>
+                    First name:<br>
+                    <input type="text" name="firstname">
+                    <br><br>
+                    Last name:<br>
+                    <input type="text" name="lastname">
+                      <br><br>
+                       
+                      Email ID : <br>
+                      <input type="text" name=email>
+					  
+                      <br><br>
+                      Phone number :<br> 
+                      <input type="text" name=phone>
+                      <br><br>
+
+                      Address : <br>
+                      <input type="text" name=address>
+                      <br><br>
+
+                      <button class="btn btn-primary" type = "submit" >submit</button>
+                      
+                  </form>
+                </center>
+          </div>
+        </section>
+  </body>
+</html>>
